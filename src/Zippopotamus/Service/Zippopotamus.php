@@ -18,7 +18,6 @@ use Laminas\Json\Json;
 final class Zippopotamus {
   /**
    * @var string $apiUrl
-   *   Static base aSPIl
    */
   public static $apiUrl = 'http://api.zippopotam.us/';
 
