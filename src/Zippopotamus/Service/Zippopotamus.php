@@ -7,9 +7,8 @@
 
 namespace Zippopotamus\Service;
 
-use Zend\Http\Client;
-use Zend\Http\Headers;
-use Zend\Json\Json;
+use Laminas\Http\Client;
+use Laminas\Http\Headers;
 
 final class Zippopotamus
 {
@@ -28,7 +27,7 @@ final class Zippopotamus
         $http->setMethod('GET');
 
         $response = $http->send();
-        $json     = Json::decode($response->getBody());
+        $json     = json_decode($response->getBody());
 
         return $json;
     }
@@ -50,7 +49,7 @@ final class Zippopotamus
         $http->setMethod('GET');
 
         $response = $http->send();
-        $json     = Json::decode($response->getBody());
+        $json     = json_decode($response->getBody());
 
         return $json;
     }
@@ -68,7 +67,7 @@ final class Zippopotamus
         $http->setMethod('GET');
 
         $response = $http->send();
-        $json     = Json::decode($response->getBody());
+        $json     = json_decode($response->getBody());
 
         return $json;
     }
