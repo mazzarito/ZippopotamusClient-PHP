@@ -7,9 +7,9 @@
 
 namespace Zippopotamus\Service;
 
-use Zend\Http\Client;
-use Zend\Http\Headers;
-use Zend\Json\Json;
+use Laminas\Http\Client;
+use Laminas\Http\Headers;
+use Laminas\Json\Json;
 
 final class Zippopotamus
 {
