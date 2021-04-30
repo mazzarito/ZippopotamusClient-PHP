@@ -1,6 +1,7 @@
 Zippopotamus PHP Library
 ================================
-A library to abstract the Zippopotamus API
+A library to abstract the Zippopotamus API, no longer depends on ZendFramework and instead depends on Laminas which is
+the community supported fork of ZendFramework.
 
 Installation
 ------------
@@ -8,8 +9,14 @@ Installation
 
      ```json
      "require": {
-        "zippopotamus/zippopotamus": "dev-master"
-     }
+        "zippopotamus/zippopotamus": "dev-laminas-migration"
+     },
+     "repositories": [
+         {
+           "type": "vcs",
+           "url": "https://github.com/mazzarito/ZippopotamusClient-PHP"
+         }
+     ]
      ```
   2. install composer via `curl -s http://getcomposer.org/installer | php` (on windows, download
      http://getcomposer.org/installer and execute it with PHP)
